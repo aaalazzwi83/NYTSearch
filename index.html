@@ -10,7 +10,7 @@
   <!-- Font Awesome CSS Icons (For cool glyphicons) -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 
   </head>
 
@@ -18,15 +18,13 @@
 
     <div class="jumbotron" style="background-color: rgb(7, 36, 104) ; color: white;">
       <h1 class="text-center">
-          <i class="nyTimeSearch"></i> New York Times Search</strong>
+          <i class="fa fa-newspaper-o nyTimeSearch"></i> New York Times Search</strong>
       </h1>
     </div>
 
-    <div> <h6> Search Paramenters</h6></div>
-    <br>
-    <br>
-<div id=boxy>
-    <form>
+    <div id="searchparameters"> <h6> Search Paramenters</h6></div>
+<div class="boxy">
+    <form >
       <div class="form-group">
         <label for="exampleFormControlInput1">Search Terms</label>
         <input type="text" class="form-control" id="searchTerm" placeholder="Search Terms">
@@ -34,33 +32,34 @@
       
       <div class="form-group">
         <label for="exampleFormControlSelect1">Number of Records:</label>
-        <select class="form-control" id="numberofRecords">
+        <!-- <select class="form-control" id="numberofRecords">
           <option>1</option>
           <option>2</option>
           <option>3</option>
           <option>4</option>
           <option>5</option>
-        </select>
+        </select> -->
+        <input class="form-control" type="number" id="numArt" placeholder="Number of Articles">
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">Start Year(optional)</label>
-        <input type="text" class="form-control" id="startYear" placeholder="Optional">
+        <input type="date" class="form-control" id="startYear" placeholder="Optional">
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">End Year(optional)</label>
-        <input type="text" class="form-control" id="endYear" placeholder="Optional">
+        <input type="date" class="form-control" id="endYear" placeholder="Optional">
       </div>
       <div class="col-auto">
-        <button type="submit" class="btn btn-primary mb-2" id="searchTimes">Search</button>
+        <button type="submit" class="btn btn-secondary mb-2" id="searchTimes">Search</button>
+        <button type="clear" class="btn btn-secondary mb-2" id="clearTimes">Clear Results</button>
       </div>
-      <div class="col-auto">
-        <button type="submit" class="btn btn-primary mb-2" id="clearTimes">Clear Results</button>
-      </div>
-    </form>
+    </form >
   </div>
     <br>
 
-    <div> <h6> Top Articles</h6></div>
+    <div id="articleBox"> <h6> Top Articles</h6>
+      <div class="content"></div>
+    </div>
 
 
 

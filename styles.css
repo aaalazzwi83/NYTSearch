@@ -1,4 +1,18 @@
-.boxy{
+.boxy {
+  border-style: groove;
+  border-width: thin;
+  padding: 10px;
+}
 
-  
+#articleBox{
+  border-style: groove;
+  border-width: thin;
+  padding: 10px;
+}
+
+#searchparameters{
+  background-color: lightgray;
+  border-style: groove;
+  border-width: thin;
+  padding: 10px;
 }
